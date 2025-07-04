@@ -11,8 +11,13 @@
   <link rel="icon" href="https://www.youtube.com/s/desktop/2253fa3d/img/logos/favicon_96x96.png" sizes="96x96">
   <link rel="icon" href="https://www.youtube.com/s/desktop/2253fa3d/img/logos/favicon_144x144.png" sizes="144x144">
 </head>
-<body class="bg-zinc-50 font-sans flex flex-col min-h-screen">
-  <nav class="flex justify-between px-6 py-4 3xl:p-6 bg-white">
+<body class="bg-zinc-50 font-sans flex flex-col min-h-screen pb-8">
+  <style>
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+  </style>
+  <nav id="navbar" class="flex justify-between px-6 py-4 3xl:p-6 bg-white sticky top-0 z-50 ">
     <div class="flex items-center gap-6">
       <button class="p-2 hover:bg-gray-200 rounded-full transition-colors duration-200 cursor-pointer">
         <img src="assets/icons/menu.svg" alt="Menu Icon" class="h-6" />
@@ -40,7 +45,7 @@
       </button>
     </div>
   </nav>
-  <main class="flex flex-1 ml-10 3xl:ml-20 mt-8 mr-4">
+  <main class="flex flex-1 ml-10 3xl:ml-20 mt-8 mr-4 gap-6">
     <div class="flex flex-2 flex-col gap-4">
       <iframe
         class="w-full aspect-video"
@@ -88,11 +93,109 @@
         Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.
       </p>
     </div>
-    <div class="flex flex-col flex-1">
-      <div class="flex">
-        <img src="" alt="">
+    <div class="flex flex-col flex-1 gap-4">
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/data-science.png" alt="Ciência de Dados" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Geração Tech Unimed - BH - Ciência de Dados</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">2,1 mil visualizações<br />
+            Transmitido há 2 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/scrum.png" alt="Scrum Talks" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Scrum Talks</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">1,6 mil visualizações<br />
+            Transmitido há 3 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/machine-learning.png" alt="Machine Learning Avançado - Fast Track" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Machine Learning Avançado - Fast Track</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">1,7 mil visualizações<br />
+            Transmitido há 4 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/project-planning.png" alt="Global Skills #2 - Project Planning" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Global Skills #2 - Project Planning</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">971 visualizações<br />
+            Transmitido há 5 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/python.png" alt="Como aprender a programar Python do ZERO" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Como aprender a programar Python do ZERO</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">711 visualizações<br />
+            Transmitido há 6 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/data-science.png" alt="Ciência de Dados" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Geração Tech Unimed - BH - Ciência de Dados</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">2,1 mil visualizações<br />
+            Transmitido há 2 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/scrum.png" alt="Scrum Talks" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Scrum Talks</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">1,6 mil visualizações<br />
+            Transmitido há 3 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/machine-learning.png" alt="Machine Learning Avançado - Fast Track" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Machine Learning Avançado - Fast Track</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">1,7 mil visualizações<br />
+            Transmitido há 4 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/project-planning.png" alt="Global Skills #2 - Project Planning" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Global Skills #2 - Project Planning</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">971 visualizações<br />
+            Transmitido há 5 dias</span>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <img src="assets/images/thumbs/python.png" alt="Como aprender a programar Python do ZERO" class="w-40" />
+        <div class="flex flex-col justify-between">
+          <span class="font-semibold text-sm leading-none">Como aprender a programar Python do ZERO</span>
+          <span class="text-sm text-zinc-600 leading-none">DigitalInnovationOne</span>
+          <span class="text-sm text-zinc-600 leading-none">711 visualizações<br />
+            Transmitido há 6 dias</span>
+        </div>
       </div>
     </div>
   </main>
 </body>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      navbar.classList.add('shadow-md');
+    } else {
+      navbar.classList.remove('shadow-md');
+    }
+  });
+</script>
 </html>
