@@ -11,7 +11,45 @@
   <link rel="icon" href="https://www.youtube.com/s/desktop/2253fa3d/img/logos/favicon_96x96.png" sizes="96x96">
   <link rel="icon" href="https://www.youtube.com/s/desktop/2253fa3d/img/logos/favicon_144x144.png" sizes="144x144">
 </head>
-<body>
-  <nav class="flex"></nav>
+<body class="bg-zinc-50 font-sans">
+  <nav class="flex justify-between px-6 py-4 3xl:p-6 bg-white">
+    <div class="flex items-center gap-6">
+      <button class="p-2 hover:bg-gray-200 rounded-full transition-colors duration-200 cursor-pointer">
+        <img src="assets/icons/menu.svg" alt="Menu Icon" class="h-6" />
+      </button>
+      <img src="assets/images/youtubelogo.png" alt="Youtube Logo" class="h-5 cursor-pointer" />
+    </div>
+    <search class="flex group border-none">
+      <input 
+        type="text" 
+        class="border border-gray-300 rounded-l px-4 py-2 w-96 focus:outline-none"
+      />
+      <button class="bg-neutral-200 px-4 py-2 rounded-r hover:bg-neutral-300 cursor-pointer transition-colors duration-200 border border-gray-300">
+        <img src="assets/icons/search.svg" alt="Search Icon" class="h-6" />
+      </button>
+    </search>
+    <div class="flex gap-6">
+      <button class="p-2 hover:bg-gray-200 rounded-full transition-colors duration-200 cursor-pointer">
+        <img src="assets/icons/videocam.svg" alt="Video Icon" class="h-6" />
+      </button>
+      <button class="p-2 hover:bg-gray-200 rounded-full transition-colors duration-200 cursor-pointer">
+        <img src="assets/icons/bell.svg" alt="Notification Icon" class="h-6" />
+      </button>
+      <button class="rounded-full transition-colors duration-200 rounded-full cursor-pointer">
+        <img src="assets/images/profile.png" alt="User" class="h-9 rounded-full" />
+      </button>
+    </div>
+  </nav>
+  <main class="flex">
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </main>
 </body>
 </html>
