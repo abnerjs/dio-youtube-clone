@@ -11,7 +11,7 @@
   <link rel="icon" href="https://www.youtube.com/s/desktop/2253fa3d/img/logos/favicon_96x96.png" sizes="96x96">
   <link rel="icon" href="https://www.youtube.com/s/desktop/2253fa3d/img/logos/favicon_144x144.png" sizes="144x144">
 </head>
-<body class="bg-zinc-50 font-sans">
+<body class="bg-zinc-50 font-sans flex flex-col min-h-screen">
   <nav class="flex justify-between px-6 py-4 3xl:p-6 bg-white">
     <div class="flex items-center gap-6">
       <button class="p-2 hover:bg-gray-200 rounded-full transition-colors duration-200 cursor-pointer">
@@ -40,16 +40,59 @@
       </button>
     </div>
   </nav>
-  <main class="flex">
-    <iframe 
-      width="560" 
-      height="315" 
-      src="https://www.youtube.com/embed/jNQXAC9IVRw" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+  <main class="flex flex-1 ml-10 3xl:ml-20 mt-8 mr-4">
+    <div class="flex flex-2 flex-col gap-4">
+      <iframe
+        class="w-full aspect-video"
+        src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p class="font-semibold text-xl">Me at the zoo</p>
+      <div class="flex justify-between items-center gap-2">
+        <div class="flex items-center gap-4">
+          <img src="assets/images/jawed.png" alt="Jawed" class="h-12 rounded-full" />
+          <div class="flex flex-col gap-1 w-fit">
+            <span class="font-semibold leading-none">jawed</span>
+            <span class="text-gray-500 text-sm leading-none">5,58 mi de inscritos</span>
+          </div>
+        </div>
+        <button class="bg-red-600 text-nowrap text-white px-6 py-2 rounded hover:bg-red-700 transition-colors duration-200 cursor-pointer font-semibold text-sm">
+          INSCREVA-SE
+        </button>
+        <div class="flex-1 *:w-max *:px-2 *:py-2 *:hover:bg-zinc-200 *:transition-colors *:duration-200 *:cursor-pointer *:rounded-full flex gap-4 *:flex *:items-center *:gap-2 *:text-sm *:leading-none *:font-semibold">
+          <button>
+            <img src="assets/icons/like.svg" alt="Like Icon" class="h-6" />
+            <span class="text-nowrap">2 mil</span>
+          </button>
+          <button>
+            <img src="assets/icons/dislike.svg" alt="Like Icon" class="h-6" />
+            <span class="text-nowrap">Não gostei</span>
+          </button>
+          <button>
+            <img src="assets/icons/share.svg" alt="Like Icon" class="h-6" />
+            <span class="text-nowrap">Compartilhar</span>
+          </button>
+          <button>
+            <img src="assets/icons/download.svg" alt="Like Icon" class="h-6" />
+            <span class="text-nowrap">Download</span>
+          </button>
+        </div>
+      </div>
+      <span class="font-bold">
+        365.651.534 visualizações  24 de abr. de 2005
+      </span>
+      <p class="text-zinc-600 text-sm max-w-xl">
+        Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.
+      </p>
+    </div>
+    <div class="flex flex-col flex-1">
+      <div class="flex">
+        <img src="" alt="">
+      </div>
+    </div>
   </main>
 </body>
 </html>
